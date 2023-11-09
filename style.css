@@ -1,0 +1,402 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Climate Crisis', sans-serif;
+font-family: 'Poltawski Nowy', serif;
+font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/pic1.jpg);
+    background-color: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+.header img{
+    width:55px;
+}
+.nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center; 
+    background:#5c15c0;
+    height: 80px;
+    width:100%;  
+}
+.nav img{
+    width:150px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+    background: #8654cb;
+    height:120px;
+    width:100%;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding:25px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:#c10d0d;
+    text-decoration:dashed;
+    font-size: 13px;
+    text-decoration: solid;
+}
+.nav-links ul li a:before{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#c0b8b8;
+    display:block;
+    margin:auto;
+    
+}
+.nav-links ul li a:hover:before{
+    transform: scaleX(1);
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width:90%;
+    color:#5c15c0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h3{
+    
+    font-size: 40px;    
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:rgb(8, 7, 10);
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:rgb(5, 5, 9);
+    border:1px solid #60e80b;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border:1px solid #c10d0d;
+    background:#b25e59;
+    transition:1s;
+}
+nav.fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;    
+    }    
+
+.nav-links ul li{
+    display:block;
+}.nav-links{
+    position:absolute;
+    background:#6213b6;
+    height:100vh;
+    width:200px;
+    top:0;
+    right:-200px;
+    text-align:left;
+    z-index:2;
+    transition: 1s;
+}
+nav.fa{
+    display:block;
+    color:#6213b6;
+    margin:10px;
+    font-size:22px;
+    cursor:pointer;
+}
+.nav-links ul{
+    padding:30px;
+
+}}
+
+
+/*-----       course   -----*/
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top: 100px;
+}
+h1{
+    font-size:36px;
+    font-weight: 600;
+}
+p{
+    color:#6213b6;
+    font-size:14px;
+    font-weight:300px;
+    line-height:22px;
+    padding:10px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis:31%;
+    background:#71d2e1;
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding:20px 12px;
+    box-sizing: border-box;
+    transition:0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*-------campus--------*/
+.campus{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+}
+.campus-col{
+    flex-basis:32%;
+    margin-bottom:30px;
+    position:relative;
+    overflow:hidden;
+}
+.campus-col img{
+    width:100%;
+    display:block;
+}
+
+.layer{
+    background:transparent;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:0.5s;
+}
+.layer:hover{
+    background:rgba(170, 208, 215, 0.7);
+}
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    color:#fff;
+    font-size:26px;
+    bottom:0%;
+    left:50%;
+    transform:translateX(-50%);
+    position:absolute;
+    opacity:0;
+    transition:0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    
+    opacity:1;
+}
+.facilities{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:100px;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom:5%;
+    text-align: left; 
+
+}
+.facilities-col img{
+    width:100%;
+   height:44%;
+    border-radius: 10%;
+}
+.facilities-col p{
+    padding:0;
+}
+.facilities-col h3{
+    margin-top:16px;
+    margin-bottom:15px;
+    text-align: left;
+}
+/*------testimonials------*/
+.testimonials{
+    width:80%;
+    margin:auto;
+    padding-top:100px;
+    text-align:center;
+}
+.testimonial-col {
+    flex-basis:37%;
+    border-radius:30px;
+    margin-bottom:5%;
+    text-align: left;
+    background:#eecfcf;
+    padding:25px;
+    cursor:pointer;
+    
+}
+.testimonial-col img{
+    height:40px;
+    margin-left:7px;
+    margin-right:33px;
+    border-radius: 100%;
+}
+
+.testimonial-col p{
+    padding:0;
+
+}
+.testimonial-col h3{
+    margin-top:15px;
+    text-align: left;
+}
+.testimonial-col .fa{
+    color:#f44336;
+}
+@media(max-width:700px)
+{
+    .testimonial-col img{
+        margin-left:0px;
+        margin-right:15px;
+    } 
+}
+/*-----contact-----*/
+.con{
+    margin: auto ;
+    width:80%;
+    background-image:url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+    text-align:center;
+    padding:100px 0;
+}
+.con{
+    color:#fff;
+    margin-bottom:99px;
+
+}
+@media(max-width:700px){
+    .con h1{
+        font-size:24px;
+    }
+}
+
+/*-----footer---*/
+.footer{
+    width:100%;
+    text-align:center;
+    padding:30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color:#f43636;
+    margin:0 13px;
+    cursor:pointer;
+    padding:18px 0;
+}
+
+.footer{
+    background:#89cad6;
+    box-sizing: border-box;
+    padding:70px 0;
+
+}
+.container{
+    max-width: 1170px;
+    background-color:#b25e59;
+    margin:auto;
+}
+ul{
+    list-style:none;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+.footer-col{
+    width: 20%;
+    padding:0 15px;
+
+}
+.footer-col h4{
+    font-size:20px;
+    color:beige;
+    text-transform: capitalize;
+    margin-bottom:30px;
+    font-weight: 500;
+    position:relative;
+    background-color:rgb(168, 20, 20);
+}
+.footer-col h4::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color:#09a9c5;
+    height:2px;
+    box-sizing:border-box;
+    width:50px;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poltawski+Nowy:wght@500&family=Poppins:ital,wght@0,400;0,600;0,900;1,600&display=swap');
+.footer{
+    line-height: 1.5;
+    font-family:'Poppins', sans-serif;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    
+    color:#ffffff;
+    text-decoration: none;
+    font-weight:300;
+    color:#71d2e1;
+    display:block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color:#c0b8b8;
+    padding-left:10px;
+
+}
